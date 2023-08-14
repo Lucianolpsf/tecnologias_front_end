@@ -39,7 +39,7 @@ Apos o download basta seguir o passo a passo da instalação que o assistente lh
 
 ### **COMANDOS BÁSICOS** ###
 ---
-Para iniciar, clique com o botão direito do mouse na pasta\repositório do projeto deseja comer o versionamento com o git.
+Para iniciar, clique com o botão direito do mouse na pasta\repositório do projeto deseja começar o versionamento com o git.
 
 |Comando|descrição|
 |-|-|
