@@ -8,10 +8,11 @@ Repositorio criado para desenvolvimento do curso de front-end, com intuito de ce
 - [html](./markdown/html.md)
 - [markdown](./markdown/markdown.md)
 
+<div align=center>
 
 [![cmd](./imagens/icons8-cmd-50.png)](./markdown/cmd.md)
 [![portugol](./imagens/logo-portugol-black.png)](./Portugol)
 [![git](./imagens/icons8-git-50.png)](./markdown/git.md)
 [![html](./imagens/icons8-html5-50.png)](./markdown/html.md)
 [![markdown](./imagens/icons8-redução-de-preço-50.png)](./markdown/markdown.md)
-
+</div>
