@@ -9,14 +9,16 @@ Use # para criar titulos (use ate 6 #)
 ##### Titulo 5
 ###### Titulo 6
 ```
----
+Resultado:
 
-Use sinal ( - ) ou ( * ) para criar topicos
-```
-* Topico (*)
-- Topico (-)
-```
----
+# Titulo 1
+## Titulo 2
+### Titulo 3
+#### Titulo 4
+##### Titulo 5
+###### Titulo 6
+
+## Marcação Italico, Negrito e taxado
 
 Use um * para dexar em italico e dois ** para deixar em negrito, e use ~~ para taxado.
 ```
@@ -26,14 +28,43 @@ Use um * para dexar em italico e dois ** para deixar em negrito, e use ~~ para t
 
 ~~Taxado~~
 ```
+Resultado:
+
+*Italico*
+
+**Negrito**
+
+~~Taxado~~
+
+## Listas ordenadas e não ordenadas
+
+Para criar listas não numeradas use o numero seguido de .
+```
+- item
+    - item
+    - item
+- item
+- item
+```
+Resultado:
+- item
+    - item
+    - item
+- item
+- item
+
 Para criar listas numeradas use o numero seguido de .
 ```
-- item
-    - item
-    - item
-- item
-- item
+1. item
+    1. item
+1. item
+1. item
 ```
+Resultado:
+1. item
+    1. item
+1. item
+1. item
 
 <br>
 
@@ -48,7 +79,7 @@ Resultado:
 | nome | email |
 | -- | --: |
 | Luciano | luciano@lindo.com|
-| Monica | exemplo@sobrevivente.com|
+| Exemplo | exemplo@sobrevivente.com|
 
 <br>
 
@@ -57,6 +88,7 @@ Resultado:
 ```
 [Clique aqui](https://icons8.com.br/icons/set/html)
 ```
+Resultado:
 [Clique aqui](https://icons8.com.br/icons/set/html)
 
 ## Imagens
@@ -65,4 +97,8 @@ Resultado:
 ![html](./imagens/html.png)
 
 ```
+Resultado:
+
 ![html](../imagens/html.png)
+
+[![voltar](../imagens/icons8-voltar-50.png)](../README.md)

@@ -66,3 +66,4 @@ Para iniciar, clique com o botão direito do mouse na pasta\repositório do proj
 |`clear`|limpa os comandos da bash|
 
 
+[![voltar](../imagens/icons8-voltar-50.png)](../README.md)

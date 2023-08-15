@@ -1,31 +1,31 @@
 programa {
   inclua biblioteca Matematica --> mat
 
-  funcao calcula_porcentagem(real numero_porcento, real porcentagem){
+  funcao real calcula_porcentagem(real numero_porcento, real porcentagem){
     retorne  (numero_porcento * porcentagem)/100
   }
 
-  funcao multiplicacao(real numero, real numero2){
+  funcao real multiplicacao(real numero, real numero2){
     retorne numero * numero2
   }
-  funcao divisao(real numero, real numero2){
+  funcao real divisao(real numero, real numero2){
     retorne numero / numero2
   }
 
-  funcao raiz_quadrada(inteiro numero){
+  funcao real raiz_quadrada(real numero){
     retorne mat.raiz(numero, 2)
   }
 
-  funcao valor_de_pi () {
+  funcao real valor_de_pi () {
     retorne  mat.PI
   }
 
   funcao menu (){
     escreva("\nInforme o que deseja realizar. \n")
     escreva("01 - soma \n")
-    escreva("02 - subtraÁ„o \n")
-    escreva("03 - multiplicaÁ„o \n")
-    escreva("04 - divis„o \n")
+    escreva("02 - subtra√ß√£o \n")
+    escreva("03 - multiplica√ß√£o \n")
+    escreva("04 - divis√£o \n")
     escreva("05 - raiz quadrada \n")
     escreva("06 - porcentagem \n")
     escreva("07 - valor de pi \n")
@@ -33,8 +33,8 @@ programa {
   }
 
   funcao inicio() {
-    inteiro opcao, raiz
-    real numero_porcento, porcentagem, numero, numero2
+    inteiro opcao = 0, raiz
+    real numero_porcento, porcentagem, numero = 0, numero2
     real numero_somado = 0
 
     enquanto (opcao != 99){
@@ -43,21 +43,21 @@ programa {
 
     se (opcao == 01){
       limpa()
-        enquanto(numero != 00){      
+        faca{      
           escreva("informe o numero a ser somado: ")
           leia(numero)
           numero_somado += numero
           escreva(numero_somado, "\n")
-        }
+        }enquanto(numero != 00)
     }
     senao se (opcao == 02){
       limpa()
-        enquanto(numero != 00){      
+        faca{      
           escreva("informe o numero a ser subtraido: ")
           leia(numero)
           numero_somado -= numero
           escreva(numero_somado, "\n")
-        }
+        }enquanto(numero != 00)
     }
     senao se (opcao == 03){
       limpa()
@@ -77,7 +77,7 @@ programa {
       leia(numero2)
       limpa()
         se (numero == 0 ou numero2 == 0){
-          escreva("N„o È possivel divisıes com 0 ")
+          escreva("N√£o √© possivel divis√µes com 0 ")
         }
         senao {
             escreva(divisao(numero, numero2))
@@ -108,9 +108,21 @@ programa {
     senao 
     {
       limpa()
-      escreva("Informe uma opÁ„o valida! \n")
+      escreva("Informe uma op√ß√£o valida! \n")
     }
     }
 
   }
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta se√ß√£o do arquivo guarda informa√ß√µes do Portugol Studio.
+ * Voc√™ pode apag√°-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 1505; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
