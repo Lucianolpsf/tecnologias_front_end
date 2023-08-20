@@ -65,5 +65,8 @@ Para iniciar, clique com o botão direito do mouse na pasta\repositório do proj
 |`git log --pretty=format:"%h %s" --graph`|historico de commits com graficos, hash abreviada e comentario|
 |`clear`|limpa os comandos da bash|
 
+<div style="text-align: right">
 
 [![voltar](../imagens/icons8-voltar-50.png)](../README.md)
+
+</div>

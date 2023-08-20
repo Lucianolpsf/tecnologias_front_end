@@ -231,7 +231,7 @@ No exemplo abaixo temos as seguintes tags:
 </table>
 ```
 
-**Resultado**
+**Resultado:**
 
 ![tabela](../imagens/tabela.png)
 
@@ -260,7 +260,8 @@ Trocando os titulos de lugar é possivel criar outras organizações de tabelas.
     </tr>
 </table>
 ```
-**Resultado**
+**Resultado:**
+
 ![tabela2](../imagens/tabela2.png)
 
 
@@ -310,7 +311,8 @@ Acrescentando as tags a seguir podemos tornar uma tabela semanticamente mais cor
 </table>
 ```
 
-**Resultado**
+**Resultado:**
+
 ![tabela3](../imagens/tabela3.png)
 
 ### Espandindo linhas e colunas
@@ -348,7 +350,7 @@ Usando a propriedade `colspan ="numero de colunas a ser espandido"`, podemos col
 </table>
 ```
 
-**Resultado**
+**Resultado:**
 
 ![tabela4](../imagens/tabela4.png)
 
@@ -385,9 +387,12 @@ Usando a propriedade `rowspan ="numero de linhas a ser espandido"`, podemos colu
 </table>
 ```
 
-**Resultado**
+**Resultado:**
 
 ![tabela5](../imagens/tabela5.png)
 
+<div style="text-align: right">
 
 [![voltar](../imagens/icons8-voltar-50.png)](../README.md)
+
+</div>

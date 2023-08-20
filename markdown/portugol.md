@@ -12,4 +12,8 @@
 
 - [Calculadora](../Portugol/Calculadora.por)
 
+<div style="text-align: right">
+
 [![voltar](../imagens/icons8-voltar-50.png)](../README.md)
+
+</div>

@@ -1,4 +1,4 @@
-# AULA MARKDOWN
+# MARKDOWN
 
 Use # para criar titulos (use ate 6 #)
 ```
@@ -101,4 +101,8 @@ Resultado:
 
 ![html](../imagens/html.png)
 
+<div style="text-align: right">
+
 [![voltar](../imagens/icons8-voltar-50.png)](../README.md)
+
+</div>
