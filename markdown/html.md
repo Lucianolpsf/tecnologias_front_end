@@ -2,7 +2,7 @@
 
 HTML é uma linguagem de marcação de hypertexto, interpretada pelos navegadores de internet afim de criar um sistema de naveção interpretado. Abaixo você pode conferir as principais tags da linguagem em sua versão mais atual (HTML5).
 
-## Tags semanticas para formatação de texto
+## TAGS SEMANTICAS PARA FORMATAÇÃO DE TEXTO
 
 |Tag| Descrição|
 |-|-|
@@ -16,7 +16,7 @@ HTML é uma linguagem de marcação de hypertexto, interpretada pelos navegadore
 |&lt;sub&gt;|Define um texto subscrito|
 |&lt;sup&gt;|Define um texto sobscrito|
 
-## Tags semanticas adicionais para formatação de texto
+## TAGS SEMANTICAS ADICIONAIS PARA FORMATAÇÃO DE TEXTO
 
 |Tag| Descrição|
 |-|-|
@@ -30,7 +30,7 @@ HTML é uma linguagem de marcação de hypertexto, interpretada pelos navegadore
 |&lt;q&gt;|Define uma breve citação inline|
 |&lt;small&gt;|Define letras de rodapé para textos discretos|
 
-## Simbolos
+## SIMBOLOS
 
 |Tag seguido de ;|Simbolo|Descrição|
 |-|-|-|
@@ -48,13 +48,13 @@ HTML é uma linguagem de marcação de hypertexto, interpretada pelos navegadore
 |&larr|&larr;|Seta para esquerda|
 |&rarr|&rarr;|Seta para direita|
 
-## Emoji
+## EMOJI
 
 Para adicionar emoji basta iniciar a sequencia `&#x[codigo hexadecimal]`. <p>Por exemplo o codigo a seguir: &#x1F466  gera o seguinte emoji: 👦</p>
 
 [Clique aqui](https://emojipedia.org/) para conseguir seus emojis favoritos.
 
-## Listas
+## LISTAS
 
 Existem 3 tipos de lista em HTML
 
@@ -183,7 +183,7 @@ Insira na propriedade "href" o link local ou remoto.
 
 <a href="https://github.com/lucianolpsf">Meu github.</a>
 
-## Imagem
+## IMAGEM
 
 Insira na propriedade "src" o link local ou remoto de sua imagem. Já na propriedade "alt" insira um texto alternativo para caso a imagem não seja encontrada ou possibilitada de carregar.
 
@@ -193,5 +193,201 @@ Insira na propriedade "src" o link local ou remoto de sua imagem. Já na proprie
 **Resultado:**
 
 <img src="../imagens/html.png" alt="HTML5">
+
+## TABELAS
+
+Tabelas são um aspecto importante para qualquer website principalmente quando se é necessario organizar dados na tela.
+
+No exemplo abaixo temos as seguintes tags:
+
+- `<table>` indica o inicio de uma tabela
+- `<tr>` indica o inicio da linha de uma tabela
+- `<th>` indica o inicio do titulo de uma tabela
+- `<td>` indica o inicio de uma celula de dados de tabela
+
+```html
+<table>
+    <tr>
+        <th>Titulo 1</th>
+        <th>Titulo 2</th>
+        <th>Titulo 3</th>
+    </tr>
+
+    <tr>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+    <tr>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+    <tr>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+</table>
+```
+
+**Resultado**
+
+![tabela](../imagens/tabela.png)
+
+Trocando os titulos de lugar é possivel criar outras organizações de tabelas.
+
+```html
+<table>
+    <tr>
+        <th>Titulo 1</th>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+
+    <tr>
+        <th>Titulo 2</th>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+    <tr>
+        <th>Titulo 3</th>
+        <td>Exemplo 1</td>
+        <td>Exemplo 2</td>
+        <td>Exemplo 3</td>
+    </tr>
+</table>
+```
+**Resultado**
+![tabela2](../imagens/tabela2.png)
+
+
+### Tabelas semanticas
+
+Acrescentando as tags a seguir podemos tornar uma tabela semanticamente mais correta e organizada.
+
+- `<caption>` Cabechalho da tabela. 
+- `<thead>` Cabechalho da tabela. 
+- `<tbody>` Cabechalho da tabela. 
+- `<tfood>` Cabechalho da tabela. 
+
+```html
+<table>
+    <caption>Tabela exemplo</caption>
+    <thead>
+        <tr>
+            <th>Titulo 1</th>
+            <th>Titulo 2</th>
+            <th>Titulo 3</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Rodapé da tabela.</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+**Resultado**
+![tabela3](../imagens/tabela3.png)
+
+### Espandindo linhas e colunas
+
+Usando a propriedade `colspan ="numero de colunas a ser espandido"`, podemos colunas que ocupam espaços diferentes na tabela. Veja o exemplo:
+
+```html
+<table>
+    <caption>Tabela exemplo</caption>
+    <thead>
+        <tr>
+            <th colspan="3">Titulo espan em 3 colunas </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Rodapé da tabela.</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+**Resultado**
+
+![tabela4](../imagens/tabela4.png)
+
+Usando a propriedade `rowspan ="numero de linhas a ser espandido"`, podemos colunas que ocupam espaços diferentes na tabela. Veja o exemplo:
+
+```html
+<table>
+    <caption>Tabela exemplo</caption>
+    <thead>
+        <tr>
+            <th colspan="3">Titulo espan em 3 colunas </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2">Exemplo 1</td>
+            <td>Exemplo 2</td>
+            <td>Exemplo 3</td>
+        </tr>
+        <tr>
+            <td>Exemplo 1</td>
+            <td>Exemplo 2</td>
+
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Rodapé da tabela.</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+**Resultado**
+
+![tabela5](../imagens/tabela5.png)
+
 
 [![voltar](../imagens/icons8-voltar-50.png)](../README.md)
