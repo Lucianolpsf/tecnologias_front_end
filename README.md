@@ -7,7 +7,7 @@ Clique em um dos links ou em um dos icones para ser direcionado a tecnologia que
 <div align=center>
     
 [cmd](./markdown/cmd.md)  
-[cmd](./markdown/css.md)  
+[css](./markdown/css.md)  
 [git](./markdown/git.md)  
 [html](./markdown/html.md)  
 [markdown](./markdown/markdown.md)  
