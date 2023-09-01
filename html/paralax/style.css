@@ -1,0 +1,58 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    text-align: justify;
+}
+
+.secoes {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h2{
+    text-align: center;
+    margin: auto;
+    font-size: 10em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#sec-5 , #sec-7 {
+    background-position: bottom center;
+}
+
+#sec-1{
+    background-image: url(../../imagens/luxo.png);
+}
+
+#sec-3{
+    background-image: url(../../imagens/tarde.png);
+}
+
+#sec-5{
+    background-image: url(../../imagens/fusca.png);
+}
+
+#sec-7{
+    background-image: url(../../imagens/prata.png);
+}
+
+#sec-2 ,#sec-4 ,#sec-6 {
+    margin: 3em;
+}
+
+p{
+    text-indent: 3em;
+}

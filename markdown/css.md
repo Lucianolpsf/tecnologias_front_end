@@ -2,7 +2,7 @@
 
 CSS é uma linguagem de estilização, interpretada pelos navegadores de internet afim de criar um sistema de naveção visualvemente mais agradavel, manipulando assim todos os componentes visiveis em tela, cor, fonte espaço e etc.
 
-## PROPRIEDADES DE CORES
+## CORES
 
 As cores em CSS podem ser representadas e varias maneiras diferentes, as principais são:
 
@@ -18,24 +18,19 @@ As cores em CSS podem ser representadas e varias maneiras diferentes, as princip
 exemplos:
 
 ```css
-\* representação por nome *\
-.h1 {
+h1 {
     color: CornflowerBlue;
 } 
 
-\* representação por hexadecimal *\
-
-.h2 {
+h2 {
     color: #6495ED;
 }
 
-\* representação por RGB *\
-.h3 {
+h3 {
     color: rgb(100,149,237);
 }
 
-\* representação por HSL *\
-.h4 {
+h4 {
     color: hsl(0, 100%, 25%);
 }
 ```
@@ -119,7 +114,7 @@ h1 {
 
 ```
 
-## MANIPULANDO TEXTOS
+## TEXTOS
 
 ### color
 
@@ -222,6 +217,107 @@ Definir a sompra de um texto.
 text-shadow: 2px 2px #ff0000;
 text-shadow: 2px 2px 8px #FF0000;
 ```
+
+## BACKGROUND
+
+A propriedade background permite mudar os aspectos de plano de fundo dos elementos ao qual forem aplicados, desde que esse lhes seja permitido um plano de fundo.
+
+```css
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+```
+## DISPLAY
+
+Display diz respeito a como os elementos se comportam em tela. Por padrão cada elemento possui seu proprio display e podemos mudalo com o atributo CSS `display`. A manipulação de display é o modo mais pratico, de mostrar, escoder e alinhar os elementos em pagina. Os mais comuns são:
+
+```css
+/* valores pré-compostos */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+
+/* geração de caixas */
+display: none;
+display: contents;
+
+/* sintaxe de dois valores */
+display: block flow;
+display: inline flow;
+display: inline flow-root;
+display: block flex;
+display: inline flex;
+display: block grid;
+display: inline grid;
+display: block flow-root;
+
+/* outros valores */
+display: table;
+display: table-row; /* todos os elementos da tabela têm um valor de exibição CSS equivalente */
+display: list-item;
+
+/* Valores globais */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
+
+```
+> site de referencia [https://developer.mozilla.org/](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
+
+## BOX MODEL 
+
+### altura, largura, borda, padding e margin
+
+Estes 5 elementos manipulam os espaços ocupados interna e externamente a um elemento, no exemplo abaixo sera aplicado em uma div, criando um quadrado com espacamento interno e externo.
+
+```css
+div {
+  width: 50px;
+  height: 50px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+```
+
+![Recorte de importe em folha de estilo css](../imagens/box-model.png)
+
+> site de referencia [W3schools](https://www.w3schools.com/css/css_boxmodel.asp)
+
+## MEDIA QUERY
+
+As medias querys tem um papel importante na atribuição de responsividade das nossas paginas HTML, pois consequimos atribuir estilos diferentes para cada tamanho de tela, e controlar os aspectos visuais para os diferentes tipos de dispositivos.
+
+### Tipos de telas
+
+|Tipo|	Description|
+|-|-|
+|all|	Used for all media type devices|
+|print|	Used for printers|
+|screen|	Used for computer screens, tablets, smart-phones etc.|
+|speech|	Used for screenreaders that "reads" the page out loud|
+
+No exemplo abaixo mudamos a cor de fundo do background quando as telas atingem o tamnho de largura de `480px`.
+```css
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+  }
+}
+```
+> site de referencia [W3schools](https://www.w3schools.com/css/css_boxmodel.asp)
+
+
 
 <div style="text-align: right">
 
