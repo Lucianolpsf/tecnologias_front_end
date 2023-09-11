@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+h2{
+    padding: 0.3em;
+}
+
+main {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+.cadastro , .tarefas{
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 70%;
+}
+
+.cadastro{
+    margin: 2em auto;
+}
+
+.tarefas{
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    padding: 0.5em;
+}
+input {
+    padding: 0.8em;
+    width: 80%; 
+}
+
+button{
+    padding: 0.8em;
+}
+
+li{
+    list-style: none;
+    padding: 0.8em;
+    margin: 0.3em;
+    border-radius: 3px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.excluir , .concluida{
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <main class="container">
+
+            <div class="cadastro">
+                <label for="nova-tarefa">Cadastre um tarefa</label>
+                <input type="text" name="nova-tarefa" id="nova-tarefa" placeholder="digite sua nova tarefa" autocomplete="on">
+                <button>Criar</button>
+            </div>
+
+            <article class="tarefas">
+                <h2>Tarefas</h2>
+                <ul class="lista-tarefas"></ul>
+            </article>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
