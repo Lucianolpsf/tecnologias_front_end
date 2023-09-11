@@ -1,40 +1,38 @@
 const novaTarefa = document.querySelector('#nova-tarefa')
 const btnCriarTarefa = document.querySelector('button')
 var listaTarefas = []
+let btnTarefas = document.querySelector('.tarefas')
+;
+
+novaTarefa.addEventListener('keyup', (tecla)=>{
+    
+    if (tecla.key == 'Enter'){
+        renderizarTarefa()
+        atualizarListaTarefas()
+    }
+})
 
 btnCriarTarefa.addEventListener('click', ()=>{
     
-    const tarefa = criarNovaTarefa(novaTarefa.value)
-    
-    const listaTarefas = document.querySelector('.lista-tarefas')
-    
-    listaTarefas.appendChild(tarefa)
-    
+    renderizarTarefa()    
     atualizarListaTarefas()
     
-    const btnExcluirTarefa = [...listaTarefas.querySelectorAll('.excluir')]
-    const btnTarefaConcluida = [...listaTarefas.querySelectorAll('.concluida')]
-  
-    btnExcluirTarefa.forEach((itemLista)=>{
-        itemLista.addEventListener('click', ()=>{
-            itemLista.parentElement.parentElement.remove()
-            atualizarListaTarefas()
-        })
-    })
-    
-    btnTarefaConcluida.forEach((itemLista)=>{
-        itemLista.addEventListener('click', ()=>{
-            
-            const tarefa = itemLista.parentElement.parentElement
-            
-            tarefa.firstElementChild.classList.toggle('checked')
-            
-            atualizarListaTarefas()
-
-        })
-    })
-
 })
+
+btnTarefas.addEventListener('click',(elemento)=>{
+
+    const elementoClicado = elemento.target
+
+    if (elementoClicado.classList.contains('excluir')){
+        elementoClicado.parentElement.parentElement.remove()
+        atualizarListaTarefas()
+
+    }
+    if (elementoClicado.classList.contains('concluida')){
+        elementoClicado.parentElement.parentElement.firstElementChild.classList.toggle('checked')
+    }
+})
+
 
 function criarNovaTarefa(novaTarefa){
 
@@ -60,4 +58,15 @@ function atualizarListaTarefas(){
     
     listaTarefas = [...document.querySelectorAll('li')]
     
+}
+
+function renderizarTarefa(){
+
+    const tarefa = criarNovaTarefa(novaTarefa.value)
+    
+    const listaTarefas = document.querySelector('.lista-tarefas')
+    
+    listaTarefas.appendChild(tarefa)
+
+    novaTarefa.value = ''
 }
