@@ -54,6 +54,10 @@ button{
     padding: 0.8em;
 }
 
+input , button {
+    margin: 0.3em 0;
+}
+
 li{
     list-style: none;
     padding: 0.8em;
